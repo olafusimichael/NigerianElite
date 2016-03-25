@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NigerianElite", "NigerianElite\NigerianElite.csproj", "{CE6BF937-D05E-4799-8332-B8A0BF138D75}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PublishScripts", "PublishScripts", "{ADEAAE7C-DD0C-4942-859B-DFA7B1A3A80F}"
+	ProjectSection(SolutionItems) = preProject
+		PublishScripts\AzureVMPublishModule.psm1 = PublishScripts\AzureVMPublishModule.psm1
+		PublishScripts\Publish-WebApplicationVM.ps1 = PublishScripts\Publish-WebApplicationVM.ps1
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Configurations", "Configurations", "{CBE0CA71-766D-4A9D-B6C4-D70FEDDD46DD}"
+	ProjectSection(SolutionItems) = preProject
+		PublishScripts\Configurations\NigerianElite-WAWS-dev.json = PublishScripts\Configurations\NigerianElite-WAWS-dev.json
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CE6BF937-D05E-4799-8332-B8A0BF138D75}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CE6BF937-D05E-4799-8332-B8A0BF138D75}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CE6BF937-D05E-4799-8332-B8A0BF138D75}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CE6BF937-D05E-4799-8332-B8A0BF138D75}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{CBE0CA71-766D-4A9D-B6C4-D70FEDDD46DD} = {ADEAAE7C-DD0C-4942-859B-DFA7B1A3A80F}
+	EndGlobalSection
+EndGlobal
