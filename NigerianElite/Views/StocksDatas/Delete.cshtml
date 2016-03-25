@@ -1,0 +1,616 @@
+﻿@model NigerianElite.StocksData
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>StocksData</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Company)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Company)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Year)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Year)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Revenues)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Revenues)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Cost_of_goods_sold)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Cost_of_goods_sold)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Gross_Profit)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Gross_Profit)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Selling_general___administrative_expenses)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Selling_general___administrative_expenses)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Operating_Profit)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Operating_Profit)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Interest_Income_net)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Interest_Income_net)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Earnings_before_Income_taxes)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Earnings_before_Income_taxes)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Income_tax_expense)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Income_tax_expense)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Net_Profit)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Net_Profit)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Cash_and_cash_equivalents)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Cash_and_cash_equivalents)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Account_receivable)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Account_receivable)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Inventories)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Inventories)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Prepaid_expenses_and_other)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Prepaid_expenses_and_other)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Current_Deferred_taxes)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Current_Deferred_taxes)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Total_Current_Assets)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Total_Current_Assets)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Property_Plant_and_Equipment_net)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Property_Plant_and_Equipment_net)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Intangible_assets)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Intangible_assets)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Other_Long_term_Assets)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Other_Long_term_Assets)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Total_Assets)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Total_Assets)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Bank_lines_of_credit)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Bank_lines_of_credit)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Trade_accounts_payable)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Trade_accounts_payable)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Accrued_Current_liabilities)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Accrued_Current_liabilities)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Total_Current_Liabilities)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Total_Current_Liabilities)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Long_term_Borrowings)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Long_term_Borrowings)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Long_term_Deferred_taxes)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Long_term_Deferred_taxes)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Long_term_Commitments)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Long_term_Commitments)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Other_Long_term_Liabilities)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Other_Long_term_Liabilities)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Total_Liabilities)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Total_Liabilities)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Preferred_Stock)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Preferred_Stock)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Class_A_common_stock)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Class_A_common_stock)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Revaluation_Reserve)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Revaluation_Reserve)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Additional_paid_in_capital)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Additional_paid_in_capital)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Treasury_stock)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Treasury_stock)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Retained_earnings)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Retained_earnings)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Foreign_currency_translation)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Foreign_currency_translation)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Non_controlling_Interest)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Non_controlling_Interest)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Total_Liabilities_And_S__E_)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Total_Liabilities_And_S__E_)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Net_Income)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Net_Income)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.C_Increase__Decrease_in_Accounts_receivable)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.C_Increase__Decrease_in_Accounts_receivable)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.C_Increase__Decrease_in_Inventory)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.C_Increase__Decrease_in_Inventory)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.C_Increase__Decrease_in_Prepaid_expenses_and_other)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.C_Increase__Decrease_in_Prepaid_expenses_and_other)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.C_Increase__Decrease_in_Deferred_taxes)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.C_Increase__Decrease_in_Deferred_taxes)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Increase__Decrease__in_Bank_lines_of_credit)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Increase__Decrease__in_Bank_lines_of_credit)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Increase__Decrease__in_Trade_accounts_payable)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Increase__Decrease__in_Trade_accounts_payable)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Increase__Decrease__in_Accrued_liabilities)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Increase__Decrease__in_Accrued_liabilities)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Cash_Flows_from_Operating_Activities)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Cash_Flows_from_Operating_Activities)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Increase__Decrease__in_Operating_Cash_Flow)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Increase__Decrease__in_Operating_Cash_Flow)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Cash_Flows_from_Investing_Activities)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Cash_Flows_from_Investing_Activities)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Increase__Decrease__In_Investing_Cash_Flow)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Increase__Decrease__In_Investing_Cash_Flow)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Cash_Flows_from_Financing_Activities)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Cash_Flows_from_Financing_Activities)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Increase__Decrease__in_Financing_Cash_Flow)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Increase__Decrease__in_Financing_Cash_Flow)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Net_Cash_Flows)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Net_Cash_Flows)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Beginning_Cash_Balance)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Beginning_Cash_Balance)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Forex)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Forex)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Ending_Cash_Balance)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Ending_Cash_Balance)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Revenue_Growth)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Revenue_Growth)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Cost_of_goods_sold_as_a___of_Rev_)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Cost_of_goods_sold_as_a___of_Rev_)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SG_A_as_a___of_Rev_)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SG_A_as_a___of_Rev_)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Operating_Profit_Margin)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Operating_Profit_Margin)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ROIC)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ROIC)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Cash_Flow_as_a___of_Rev)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Cash_Flow_as_a___of_Rev)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ROA)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ROA)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ROE)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ROE)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Interest_Incomenet_as_a___of_Rev_)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Interest_Incomenet_as_a___of_Rev_)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Income_tax_expense_as_a___of_Rev_)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Income_tax_expense_as_a___of_Rev_)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Accounts_receivable_as_a___of_Rev_)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Accounts_receivable_as_a___of_Rev_)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Inventories_as_a___of_Rev_)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Inventories_as_a___of_Rev_)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Prepaid_expenses_and_other_as_a___of_Rev_)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Prepaid_expenses_and_other_as_a___of_Rev_)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Deferred_taxes_as_a___of_Rev_)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Deferred_taxes_as_a___of_Rev_)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Bank_lines_of_credit_as_a___of_Rev_)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Bank_lines_of_credit_as_a___of_Rev_)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Trade_accounts_payable_as_a___of_Rev_)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Trade_accounts_payable_as_a___of_Rev_)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Accrued_liabilities_as_a___of_Rev_)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Accrued_liabilities_as_a___of_Rev_)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>
